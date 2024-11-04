@@ -21,18 +21,18 @@ git clone https://github.com/akshayshikre/quiz-app.git
 cd quiz-app-master
 
 1. Via Shell-Docker file:
-   ```bash
-   chmod +x run.sh
+    ```bash
+    chmod +x run.sh
     bash run.sh
 2. Via Docker
     ```Docker
-    Build, Run in Detached mode
+    #Build, Run in Detached mode
     docker-compose up --build -d
-    Check logs
+    #Check logs
     docker-compose logs --tail 10 -f
-    Run npm tests
+    #Run npm tests
     docker container exec quiz-app-container npm test
-    Access morgan Logs
+    #Access morgan Logs
     docker container exec quiz-app-container tail -f logs/access.log 
 3. Via Node
     ```node
