@@ -40,4 +40,20 @@ cd quiz-app-master
     npm test
     npm start
 
+## Running Tests
+The application includes comprehensive tests to ensure functionality and reliability.
+
+### Testing Frameworks
+- **Jest**: Used for running unit tests and assertions.
+- **Supertest**: Used for testing HTTP endpoints and ensuring API functionality.
+
+### API Tests
+All API endpoints have been tested to verify correct responses, error handling, and data validation.
+
+### Service Functions Tests
+All service functions are thoroughly tested to ensure they perform as expected.
+
+### To run tests, use the following command:
+```bash
+npm test
 
