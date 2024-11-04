@@ -30,7 +30,7 @@ cd quiz-app-master
     docker-compose up --build -d
     #Check logs
     docker-compose logs --tail 10 -f
-    #Run npm tests
+    #Run npm tests (We already do it while starting container- Check docker-compose.yml file)
     docker container exec quiz-app-container npm test
     #Access morgan Logs
     docker container exec quiz-app-container tail -f logs/access.log 
