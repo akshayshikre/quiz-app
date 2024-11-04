@@ -9,6 +9,8 @@ Quiz App is a quiz application built with Node.js and Express. It provides an AP
 - **Compression**: Uses gzip compression for improved performance.
 - **Logging and Rate Limiting**: Integrated with Morgan for logging and Express Rate Limit for basic rate limiting.
 - **Docker Support**: Easily deployable with Docker and Docker Compose.
+- **API Tests**: All API endpoints tested for correct responses, error handling, and data validation using **Supertest**.
+- **Service Functions Tests**: Comprehensive testing of all service functions using **Jest** to ensure they perform as expected.
 
 ## Prerequisites
 - **Node.js** (v18 or above)
