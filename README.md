@@ -17,6 +17,7 @@ Quiz App is a quiz application built with Node.js and Express. It provides an AP
 ## Installation
 
 git clone https://github.com/akshayshikre/quiz-app.git
+
 cd quiz-app-master
 
 1. Via Shell-Docker file:
@@ -34,6 +35,7 @@ cd quiz-app-master
     Access morgan Logs
     docker container exec quiz-app-container tail -f logs/access.log 
 3. Via Node
+    ```node
     npm i
     npm test
     npm start
