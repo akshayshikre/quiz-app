@@ -117,5 +117,5 @@ Local: http://localhost:3000/api
   ```bash
    curl -X GET http://localhost:3000/api/quizzes/<quizId>/results/<userId> \
    -H "Content-Type: application/json"
-   Replace <quizId> and <userId> with the actual IDs of the quiz and the user.
+   #Replace <quizId> and <userId> with the actual IDs of the quiz and the user.
   ```
