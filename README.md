@@ -61,6 +61,7 @@ All service functions are thoroughly tested to ensure they perform as expected.
  ```
 
 ### API Documentation
+Also you can import postman Collection Which is uploaded in this repository
 
 Base URL
 Local: http://localhost:3000/api
@@ -106,8 +107,11 @@ Local: http://localhost:3000/api
    curl -X POST http://localhost:3000/api/quizzes/<quizId>/questions/<questionId>/submit-answer \
    -H "Content-Type: application/json" \
    -d '{
-        "selectedOption": 1
-      }'
+      "selectedOption": 1,
+      "userId":<userId>,
+      "questionId":<questionId>
+    }
+    '
    #Replace <quizId> and <questionId> with the actual IDs of the quiz and question.
   ```
 4. Get Quiz Results for a User
