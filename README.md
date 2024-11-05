@@ -58,6 +58,7 @@ All service functions are thoroughly tested to ensure they perform as expected.
 ### To run tests, use the following command:
 ```bash
    npm test
+ ```
 
 ### API Documentation
 
@@ -86,32 +87,35 @@ Local: http://localhost:3000/api
           }
         ]
       }'
+   ```
 2. Get Quiz by ID
 - Endpoint: GET /api/quizzes/:quizId
 - Description: Fetches a quiz by its ID without revealing the correct answers.
 - Curl Command:
   ```bash
-  curl -X GET http://localhost:3000/api/quizzes/<quizId> \
-  -H "Content-Type: application/json"
- #Replace <quizId> with the actual ID of the quiz.
+   curl -X GET http://localhost:3000/api/quizzes/<quizId> \
+   -H "Content-Type: application/json"
+   #Replace <quizId> with the actual ID of the quiz.
+  ```
 
 3. Submit Answer to a Quiz Question
 - Endpoint: POST /api/quizzes/:quizId/questions/:questionId/submit-answer
 - Description: Submits an answer for a specific question in a quiz.
 - Curl Command:
   ```bash
-  curl -X POST http://localhost:3000/api/quizzes/<quizId>/questions/<questionId>/submit-answer \
-  -H "Content-Type: application/json" \
-  -d '{
+   curl -X POST http://localhost:3000/api/quizzes/<quizId>/questions/<questionId>/submit-answer \
+   -H "Content-Type: application/json" \
+   -d '{
         "selectedOption": 1
       }'
-  #Replace <quizId> and <questionId> with the actual IDs of the quiz and question.
-
+   #Replace <quizId> and <questionId> with the actual IDs of the quiz and question.
+  ```
 4. Get Quiz Results for a User
 - Endpoint: GET /api/quizzes/:quizId/results/:userId
 - Description: Fetches the user's results for a specific quiz.
 - Curl Command:
   ```bash
-  curl -X GET http://localhost:3000/api/quizzes/<quizId>/results/<userId> \
-  -H "Content-Type: application/json"
-  Replace <quizId> and <userId> with the actual IDs of the quiz and the user.
+   curl -X GET http://localhost:3000/api/quizzes/<quizId>/results/<userId> \
+   -H "Content-Type: application/json"
+   Replace <quizId> and <userId> with the actual IDs of the quiz and the user.
+  ```
